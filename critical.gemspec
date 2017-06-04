@@ -15,12 +15,12 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/glebm/critical-rubygem'
   spec.license = 'MIT'
 
-  spec.files = Dir['{ext,lib}/**/*']
+  spec.files = Dir['{ext,lib}/**/*'] + %w[package.json package-lock.json]
   spec.require_paths = ['lib']
   spec.extensions = ['ext/npm/extconf.rb']
 
   spec.add_development_dependency 'bundler', '~> 1.15'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rubocop', '~> 0.49.1'
 end
