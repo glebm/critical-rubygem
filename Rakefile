@@ -3,7 +3,7 @@
 require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 
-desc 'Update popper.js assets to the latest npm release'
+desc 'Update critical to the latest npm release'
 task :update do
   require 'npm_commands'
   NpmCommands.new.update

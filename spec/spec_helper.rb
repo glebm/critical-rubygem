@@ -2,6 +2,7 @@
 
 require 'bundler/setup'
 require 'critical'
+require 'support/static_file_server'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

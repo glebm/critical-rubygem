@@ -3,14 +3,31 @@
 require 'spec_helper'
 
 RSpec.describe Critical do
-  before :all do
-    StaticFileServer.start
+  let(:expected_css) { <<~'CSS' }
+    p {
+      color: red;
+    }
+  CSS
+
+  context 'from the filesystem' do
+    it 'extracts critical CSS' do
+      css = Critical.generate(base: 'spec/fixtures/static', src: 'test.html')
+      expect(css).to eq expected_css
+    end
   end
 
-  after :all do
-    StaticFileServer.stop
-  end
+  context 'from a server' do
+    before :all do
+      StaticFileServer.start
+    end
 
-  it 'extracts critical CSS' do
+    after :all do
+      StaticFileServer.stop
+    end
+
+    it 'extracts critical CSS' do
+      css = Critical.generate(src: "#{StaticFileServer.url}/test.html")
+      expect(css).to eq expected_css
+    end
   end
 end

@@ -4,8 +4,6 @@ This gem provides a Ruby wrapper for the [critical] npm package.
 
 The npm package is "built" during gem installation.
 
-[critical]: https://github.com/addyosmani/critical
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +20,11 @@ bundle
 
 ## Usage
 
+```ruby
+Critical.generate(options)
+```
 
+The options are passed directly to [critical].
 
 ## Development
 
@@ -60,4 +62,6 @@ the [MIT License](http://opensource.org/licenses/MIT).
 Everyone interacting in the Critical project’s codebases, issue trackers,
 chat rooms and mailing lists is expected to follow the [code of conduct].
 
+
+[critical]: https://github.com/addyosmani/critical
 [code of conduct]: https://github.com/glebm/critical-rubygem/blob/master/CODE_OF_CONDUCT.md 
