@@ -9,7 +9,7 @@ The npm package is "built" during gem installation.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'critical', '~> 0.1.0'
+gem 'critical', '~> 0.1.1'
 ```
 
 And then execute:
