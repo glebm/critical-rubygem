@@ -9,7 +9,7 @@ group :development, :test do
   gem 'byebug', platform: [:ruby], require: false
 end
 
-# HACK: install on bundle
+# HACK: npm install on bundle
 unless $npm_commands_hook_installed # rubocop:disable Style/GlobalVars
   Gem.pre_install do |installer|
     next true unless installer.spec.name == 'critical'
