@@ -13,8 +13,7 @@ end
 unless $npm_commands_hook_installed # rubocop:disable Style/GlobalVars
   Gem.pre_install do |installer|
     next true unless installer.spec.name == 'critical'
-    require_relative './lib/npm_commands'
-    NpmCommands.new.install
+    require_relative './ext/npm/install'
   end
   $npm_commands_hook_installed = true # rubocop:disable Style/GlobalVars
 end
