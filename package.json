@@ -1,0 +1,13 @@
+{
+  "name": "critical",
+  "version": "1.0.0",
+  "description": "critical NPM",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "critical": "latest"
+  },
+  "license": "MIT"
+}
