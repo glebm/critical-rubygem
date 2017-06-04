@@ -1,4 +1,4 @@
-# Critical
+# Critical [![Build Status](https://travis-ci.org/glebm/critical-rubygem.svg?branch=master)](https://travis-ci.org/glebm/critical-rubygem)
 
 This gem provides a Ruby wrapper for the [critical] npm package.
 
