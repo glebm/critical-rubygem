@@ -9,7 +9,7 @@ The npm package is "built" during gem installation.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'critical', '~> 0.1.2'
+gem 'critical', '~> 0.1.3'
 ```
 
 And then execute:
@@ -31,7 +31,8 @@ You can also pass JavaScript regexes as strings, like this:
 ```ruby
 Critical.generate(
   ignore: [
-    {RegExp: '\.fa-(?!fw|lg|inline|inverse|spin|stack)'}
+    {RegExp: '\.fa-(?!fw|lg|inline|inverse|spin|stack)'},
+    {RegExp: ['Hello', 'i']}
   ]
 )
 ```
