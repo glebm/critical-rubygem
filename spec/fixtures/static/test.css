@@ -1,3 +1,11 @@
 p {
   color: red;
 }
+
+p.ignore-regex {
+  color: blue;
+}
+
+p.ignore-string {
+  color: green;
+}

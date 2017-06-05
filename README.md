@@ -26,6 +26,16 @@ Critical.generate(options)
 
 The options are passed directly to [critical].
 
+You can also pass JavaScript regexes as strings, like this:
+
+```ruby
+Critical.generate(
+  ignore: [
+    {RegExp: '\.fa-(?!fw|lg|inline|inverse|spin|stack)'}
+  ]
+)
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
